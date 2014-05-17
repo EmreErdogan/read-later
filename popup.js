@@ -60,9 +60,7 @@ var readLater = {
     }
 }
 
-// Run our kitten generation script as soon as the document's DOM is ready.
 document.addEventListener('DOMContentLoaded', function() {
-    //kittenGenerator.requestKittens();
     readLater.init_();
     $('#container').on('click', '.removebtn', function(e) {
         readLater.removeItem_($(this).attr('data-index'));
