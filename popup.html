@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Read Later</title>
+        <style>
+            body {
+                min-width: 200px;
+                overflow-x: hidden;
+
+            }
+
+            span.addbtn{
+                cursor: pointer;
+                color:blue;
+            }
+
+            span.removebtn{
+                cursor: pointer;
+                color:red;
+            }
+            span.removebtn:hover, span.addbtn:hover{
+                text-decoration: underline;
+            }
+
+            a{
+                outline: none;
+            }
+        </style>
+
+        <!--
+        - JavaScript and HTML must be in separate files: see our Content Security
+        - Policy documentation[1] for details and explanation.
+        -
+        - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
+        -->
+        <script src="popup.js"></script>
+        <script src="jquery-2.1.1.min.js"></script>
+    </head>
+    <body>
+        <div id="controls"></div>
+        <div id="container"></div>
+    </body>
+</html>
+
